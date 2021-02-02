@@ -55,6 +55,7 @@ export default function Perfil(props) {
                 <Grid.Column width={5} className="perfil_left">
                     <Image
                         src={ImageNoFound}
+                        //Se valida que solo el usuario cambie su avatar
                         avatar onClick={() => nombreUsuario === auth.nombreUsuario && handlerModal("avatar")}
                     />
                 </Grid.Column>
