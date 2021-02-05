@@ -49,3 +49,9 @@ export const ACTUALIZAR_AVATAR = gql `
         }
     }
 `;
+
+export const ELIMINAR_AVATAR = gql `
+    mutation eliminarAvatar {
+        eliminarAvatar
+    }
+`;

@@ -1,4 +1,5 @@
-import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
+//import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 //import fetch from 'node-fetch';
 import { createUploadLink } from 'apollo-upload-client';
 import { setContext } from 'apollo-link-context';
@@ -7,7 +8,7 @@ import { getToken } from '../utils/token';
 // Definimos a donde nos conectamos
 //const httpLink = createHttpLink({
 const httpLink = createUploadLink({
-    uri: 'http://localhost:4000/',
+    uri: 'http://localhost:4000/graphql',
     fetch
 });
 

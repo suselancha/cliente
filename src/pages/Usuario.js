@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Perfil from '../components/Perfil';
+import Perfil from '../components/Usuario/Perfil';
 
 export default function Usuario() {
 
